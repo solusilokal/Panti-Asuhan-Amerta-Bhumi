@@ -26,6 +26,7 @@ import programOrangTuaAsuhImg from './src/assets/program-orang-tua-asuh.webp';
 import bantuanPendidikanImg from './src/assets/bantuan-pendidikan.webp';
 import panganSembakoImg from './src/assets/pangan-sembako.webp';
 import karyaAnakAsuhImg from './src/assets/karya-anak-asuh.webp';
+import ogImage from './src/assets/og-image.png';
 
 const Instagram = ({ size = 24, className = '', ...props }: React.SVGProps<SVGSVGElement> & { size?: number | string }) => (
   <svg
@@ -72,6 +73,7 @@ const pageData = {
   description: "Amerta Bhumi adalah rumah penuh cinta bagi anak-anak yatim dan dhuafa. Kami berdedikasi untuk memberikan pendidikan, perlindungan, dan bekal masa depan yang lebih baik.",
   profileImg: profileImg, 
   heroImg: heroImg,
+  ogImage: ogImage,
   links: {
     instagram: "https://www.instagram.com/solusilokal.id",
     maps: "https://www.google.com/maps/place/Palangka+Raya,+Kota+Palangka+Raya,+Kalimantan+Tengah/", 
