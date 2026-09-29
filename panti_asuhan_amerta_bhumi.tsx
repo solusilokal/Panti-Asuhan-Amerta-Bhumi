@@ -669,10 +669,15 @@ export default function AmertaBhumi() {
               </button>
             </div>
 
-            <div className="bg-slate-50 border border-slate-100 rounded-[24px] p-8 flex flex-col items-center justify-center mb-8 shadow-sm">
-              <img src={pageData.profileImg} alt="Profile" className="w-[72px] h-[72px] rounded-full border-2 border-slate-200 mb-4 object-cover" />
-              <h4 className="text-[#132C45] font-bold text-lg text-center tracking-tight">@{pageData.shortName.toLowerCase().replace(/\s/g, '')}</h4>
-              <p className="text-[#517B58] text-sm mt-1 text-center font-medium opacity-90">{pageData.links.instagram.replace('https://www.', '')}</p>
+            <div className="bg-slate-50 border border-slate-100 rounded-[20px] overflow-hidden mb-6 shadow-sm">
+              <div className="w-full h-40 overflow-hidden relative bg-[#132C45]">
+                <img src={pageData.ogImage} alt="SEO Preview" className="w-full h-full object-cover object-top" />
+              </div>
+              <div className="p-3 text-center">
+                <h4 className="text-[#132C45] font-bold text-[15px] tracking-tight">{pageData.name}</h4>
+                <p className="text-slate-500 text-xs mt-0.5 line-clamp-1">{pageData.title}</p>
+                <p className="text-[#517B58] text-[11px] mt-1.5 font-medium">solusilokal.github.io/Panti-Asuhan-Amerta-Bhumi</p>
+              </div>
             </div>
 
             <div className="flex overflow-x-auto gap-3 pb-2 no-scrollbar items-start px-1 mb-4 justify-center">
